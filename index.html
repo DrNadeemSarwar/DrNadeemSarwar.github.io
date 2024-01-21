@@ -17,15 +17,15 @@
 
         .logo-img {
             max-width: 100%;
-            height: auto;
+            height: 50px;
         }
 
         .footer {
             margin-top: 50px;
-      background-color: #f8f9fa;
-      padding: 10px 10px;
-      text-align: center;
-    }
+            background-color: #f8f9fa;
+            padding: 10px 10px;
+            text-align: center;
+        }
     </style>
 
     <!-- script -->
@@ -38,6 +38,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="yourscript.js"></script>
 
 </head>
 
@@ -45,7 +46,7 @@
     <!-- header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Nadeem Sarwar</a>
+            <a class="navbar-brand" href="index.html">Nadeem Sarwar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -62,10 +63,16 @@
                         <a class="nav-link" href="Teaching.html">Teaching</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="Services.html">Services</a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="Projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="Supervision.html">Supervision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="News.html">News</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Documents/Nadeem CV - editor.docx">Resume</a>
@@ -89,9 +96,11 @@
                                 <!-- Left column with image -->
                                 <img src="Images/Profile Photo/Dr. Nadeem Sarwar.jpeg" alt="Dr. Nadeem Sarwar Image"
                                     class="img-fluid rounded profile-image">
+                                <br>
+                                <br>
+                                <p><strong>Email:</strong> 
                                     <br>
-                                    <br>
-                                <p><strong>Email:</strong> <a href="mailto:Nadeem_srwr@yahoo.com">Nadeem_srwr@yahoo.com</a>
+                                    <a href="mailto:Nadeem_srwr@yahoo.com">Nadeem_srwr@yahoo.com</a>
                                     <a href="mailto:Nsarwar.bulc@bahria.edu.pk">Nsarwar.bulc@bahria.edu.pk</a>
                                 </p>
                                 <p><strong>Cell No:</strong> <a href="tel:+92 3458704071">+92 3458704071</a></p>
@@ -100,7 +109,7 @@
                             </div>
                             <div class="col-md-8">
                                 <!-- Right column with personal information -->
-                                <div class="p-3">
+                                <div class="p-12">
                                     <div class="bg-primary text-white p-2">
                                         <p class="mb-0"><strong>Professional Experience</strong></p>
                                     </div>
@@ -160,11 +169,7 @@
                                             <p class="text-primary">Nov 2011 to Oct 2015</p>
                                         </div>
                                     </div>
-
-
                                 </div>
-
-
                             </div>
                         </div>
                     </section>
@@ -172,40 +177,49 @@
                     <div>
                         <div class="container mt-4">
                             <div class="row">
-                                <div class="col-2">
+                                <div class="col-3">
                                     <a href="https://bahria.edu.pk/bulc/cs/nadeem-sarwar/" target="_blank">
                                         <img src="Images/Logos/Bahria University.jpeg" alt="Logo 1"
                                             class="img-fluid logo-img">
                                     </a>
                                 </div>
-                                <div class="col-2">
-                                    <a href="https://www.webofscience.com/wos/author/record/O-3734-2016" target="_blank">
+                                <div class="col-3">
+                                    <a href="https://www.webofscience.com/wos/author/record/O-3734-2016"
+                                        target="_blank">
                                         <img src="Images/Logos/clarivate analysis.jpeg" alt="Logo 2"
                                             class="img-fluid logo-img">
                                     </a>
                                 </div>
-                                <div class="col-2">
-                                    <a href="https://www.scopus.com/authid/detail.uri?authorId=57207941052" target="_blank">
+                                <div class="col-3">
+                                    <a href="https://www.scopus.com/authid/detail.uri?authorId=57207941052"
+                                        target="_blank">
                                         <img src="Images/Logos/elsevier scopus.jpeg" alt="Logo 3"
                                             class="img-fluid logo-img">
                                     </a>
                                 </div>
-                                <div class="col-1">
-                                    <a href="https://scholar.google.com.pk/citations?user=EMOH9JkAAAAJ&hl=en" target="_blank">
-                                        <img src="Images/Logos/Google Scholar.jpeg" alt="Logo 4" class="img-fluid logo-img">
+                                <div class="col-3">
+                                    <a href="https://scholar.google.com.pk/citations?user=EMOH9JkAAAAJ&hl=en"
+                                        target="_blank">
+                                        <img src="Images/Logos/Google Scholar.jpeg" alt="Logo 4"
+                                            class="img-fluid logo-img">
                                     </a>
                                 </div>
-                                <div class="col-1">
+                            </div>
+                        </div>
+                        <div class="container mt-4">
+                            <div class="row">
+                                <div class="col-4">
                                     <a href="https://www.linkedin.com/in/nadeem-sarwar-6267aa2b/" target="_blank">
                                         <img src="Images/Logos/Linkedin.jpeg" alt="Logo 5" class="img-fluid logo-img">
                                     </a>
                                 </div>
-                                <div class="col-1">
+                                <div class="col-4">
                                     <a href="https://www.researchgate.net/profile/Nadeem-Sarwar-4" target="_blank">
-                                        <img src="Images/Logos/ResearchGate.jpeg" alt="Logo 6" class="img-fluid logo-img">
+                                        <img src="Images/Logos/ResearchGate.jpeg" alt="Logo 6"
+                                            class="img-fluid logo-img">
                                     </a>
                                 </div>
-                                <div class="col-2">
+                                <div class="col-4">
                                     <a href="https://ieeexplore.ieee.org/author/37892136800" target="_blank">
                                         <img src="Images/Logos/ieee_logo.png" alt="Logo 7" class="img-fluid logo-img">
                                     </a>
@@ -213,9 +227,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container mt-5">
+                    <div class="container mt-12">
                         <div>
-                            NADEEM SARWAR is a Senior Member of <a href="https://ieeexplore.ieee.org/">IEEE</a> and working as an Assistant Professor at the Department of Computer Science, <a href="https://www.bahria.edu.pk/">Bahria University</a>, Lahore, Pakistan. He has 12 years of teaching and research experience. He has published more than 65 international and National Journal/conference publications in the last five years. He is also working as an Editorial Board Member for various research journals named <a href="https://www.techscience.com/journal/cmc">CMC- Computers, Materials & Continua</a>, <a href="https://www.hindawi.com/journals/acisc/">Applied Computational Intelligence and Soft Computing</a>, <a href="https://journals.plos.org/plosone/">PLOS ONE</a>, <a href="https://ietresearch.onlinelibrary.wiley.com/journal/17518814">IET Software</a>, <a href="https://www.scimagojr.com/journalsearch.php?q=18000156707&tip=sid&clean=0">Security and Communication Networks</a>, <a href="https://www.hindawi.com/journals/ijta/">International Journal of Telemedicine and Applications</a>, <a href="https://www.hindawi.com/journals/jhe/">Journal of Healthcare Engineering</a>, <a href="https://milestoneresearch.in/JOURNALS/index.php/TMT/index#:~:text=Milestone%20Transactions%20on%20Medical%20Technometrics%20%5BISSN%3A%202584%2D072X%5D,of%20engineering%20and%20technological%20innovations.">Milestone transactions on medical Technometrics</a>, <a href="https://www.springer.com/journal/11786">Mathematics and Computer Science</a>, <a href="https://www.scirea.org/journal/Computer">SCIREA Journal of Computer</a>. Worked for more than 25 journals as and reviewer and PC member. His research interests are smart healthcare, Artificial Intelligence, Computer Vision, Natural Language Processing, Machine learning, Data Science, Biological Computing, IoT, Cloud computing, Wireless Sensor Networks, Cyber security, Image Processing, Software Engineering, Precision in Agriculture.
+                            NADEEM SARWAR is a Senior Member of <a href="https://ieeexplore.ieee.org/">IEEE</a> and
+                            working as an Assistant Professor at the Department of Computer Science, <a
+                                href="https://www.bahria.edu.pk/">Bahria University</a>, Lahore, Pakistan. He has 12
+                            years of teaching and research experience. He has published more than 65 international and
+                            National Journal/conference publications in the last five years. He is also working as an
+                            Editorial Board Member for various research journals named <a
+                                href="https://www.techscience.com/journal/cmc">CMC- Computers, Materials & Continua</a>,
+                            <a href="https://www.hindawi.com/journals/acisc/">Applied Computational Intelligence and
+                                Soft Computing</a>, <a href="https://journals.plos.org/plosone/">PLOS ONE</a>, <a
+                                href="https://ietresearch.onlinelibrary.wiley.com/journal/17518814">IET Software</a>, <a
+                                href="https://www.scimagojr.com/journalsearch.php?q=18000156707&tip=sid&clean=0">Security
+                                and Communication Networks</a>, <a
+                                href="https://www.hindawi.com/journals/ijta/">International Journal of Telemedicine and
+                                Applications</a>, <a href="https://www.hindawi.com/journals/jhe/">Journal of Healthcare
+                                Engineering</a>, <a
+                                href="https://milestoneresearch.in/JOURNALS/index.php/TMT/index#:~:text=Milestone%20Transactions%20on%20Medical%20Technometrics%20%5BISSN%3A%202584%2D072X%5D,of%20engineering%20and%20technological%20innovations.">Milestone
+                                transactions on medical Technometrics</a>, <a
+                                href="https://www.springer.com/journal/11786">Mathematics and Computer Science</a>, <a
+                                href="https://www.scirea.org/journal/Computer">SCIREA Journal of Computer</a>. Worked
+                            for more than 25 journals as and reviewer and PC member. His research interests are smart
+                            healthcare, Artificial Intelligence, Computer Vision, Natural Language Processing, Machine
+                            learning, Data Science, Biological Computing, IoT, Cloud computing, Wireless Sensor
+                            Networks, Cyber security, Image Processing, Software Engineering, Precision in Agriculture.
                         </div>
                     </div>
                 </div>
@@ -224,6 +260,21 @@
                 <!-- Right portion with 30% width and light grey background -->
                 <div class="p-3">
                     <!-- Your content for the right portion goes here -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>
+                                Latest News
+                            </h4>
+                        </div>
+                        <div class="p-2" id="newsContainer">
+                            <!-- News items will be dynamically added here -->
+                        </div>
+                        <div class="p-2">
+                            <a href="News.html">
+                                    See All News...
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -232,7 +283,9 @@
     <footer class="footer">
         <!-- Your footer content goes here -->
         <p>&copy; 2024 by Dr. Nadeem Sarwar</p>
-      </footer>
+    </footer>
+
+    <script src="yourscript.js"></script>
 </body>
 
 </html>
