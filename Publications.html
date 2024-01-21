@@ -5,14 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Collapsible Grid</title>
+    <title>Nadeem Sarwar - Publications</title>
+    <!-- style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            flex: 1;
+        }
+
+        .profile-image {
+            max-width: 100%;
+            height: 200px;
+        }
+
+        .logo-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            margin-top: 50px;
+            background-color: #f8f9fa;
+            padding: 10px 10px;
+            text-align: center;
+        }
+    </style>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="yourscript.js"></script>
+
 </head>
 
 <body>
     <!-- header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Nadeem Sarwar</a>
+            <a class="navbar-brand" href="index.html">Nadeem Sarwar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,10 +74,16 @@
                         <a class="nav-link" href="Teaching.html">Teaching</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="Services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Supervision.html">Supervision</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="News.html">News</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Documents/Nadeem CV - editor.docx">Resume</a>
@@ -41,6 +92,15 @@
             </div>
         </div>
     </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="bg-light p-3 m-4 text-center">Publications</h2>
+            </div>
+
+        </div>
+    </div>
 
     <div class="container mt-5">
         <!-- Iteration 1 -->
@@ -54,16 +114,18 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 1 -->
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse1"
+                        aria-expanded="true" aria-controls="collapse1">
                         1. AUTOMATED GENERATION OF EXPRESS-G MODELS USING NLP.
                     </div>
-                    <div class="card-body">
-                        Sindh University Research Journal-SURJ (Science Series), 48(1).(pp. 05-12) ISSN: 1813-1743 HEC recognized (X Category)
+                    <div class="card-body collapse show" id="collapse1" aria-labelledby="heading1" data-parent=".row">
+                        Sindh University Research Journal-SURJ (Science Series), 48(1).(pp. 05-12) ISSN: 1813-1743 HEC
+                        recognized (X Category)
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 2 -->
         <div class="row">
             <!-- Left side with image -->
@@ -75,16 +137,18 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 2 -->
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse2"
+                        aria-expanded="false" aria-controls="collapse2">
                         2. Automated Object-Role Model Generation
                     </div>
-                    <div class="card-body">
-                        (IJCSIS) International Journal of Computer Science and Information Security, Vol. 14, No. 9, September 2016 (pp. 301-308). ISSN 1947 5500
+                    <div class="card-body collapse" id="collapse2" aria-labelledby="heading2" data-parent=".row">
+                        (IJCSIS) International Journal of Computer Science and Information Security, Vol. 14, No. 9,
+                        September 2016 (pp. 301-308). ISSN 1947 5500
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 3 -->
         <div class="row">
             <!-- Left side with image -->
@@ -96,16 +160,18 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 3 -->
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse3"
+                        aria-expanded="false" aria-controls="collapse3">
                         3. Designing a Model for improving CPU Scheduling by using Machine Learning
                     </div>
-                    <div class="card-body">
-                        in (IJCSIS) International Journal of Computer Science and Information Security, Vol. 14, No. 10, October 2016 (pp. 201-204). ISSN 1947 5500
+                    <div class="card-body collapse" id="collapse3" aria-labelledby="heading3" data-parent=".row">
+                        in (IJCSIS) International Journal of Computer Science and Information Security, Vol. 14, No. 10,
+                        October 2016 (pp. 201-204). ISSN 1947 5500
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 4 -->
         <div class="row">
             <!-- Left side with image -->
@@ -117,16 +183,18 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 4 -->
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse4"
+                        aria-expanded="false" aria-controls="collapse4">
                         4. Wireless Mesh Network: IEEE802.11s
                     </div>
-                    <div class="card-body">
-                        in (IJCSIS) International Journal of Computer Science and Information Security, Vol. 14, No. 12, December, 2016 (pp. 803-809). ISSN 1947 5500
+                    <div class="card-body collapse" id="collapse4" aria-labelledby="heading4" data-parent=".row">
+                        in (IJCSIS) International Journal of Computer Science and Information Security, Vol. 14, No. 12,
+                        December, 2016 (pp. 803-809). ISSN 1947 5500
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 5 -->
         <div class="row">
             <!-- Left side with image -->
@@ -138,16 +206,18 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 5 -->
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse5"
+                        aria-expanded="false" aria-controls="collapse5">
                         5. Generating Express Data Models from SBVR
                     </div>
-                    <div class="card-body">
-                        Proceedings of the Pakistan Academy of Sciences: A. Physical and Computational Sciences 53 (4): 381–389 (2016). ISSN: 2518-4245 HEC recognized (X Category)
+                    <div class="card-body collapse" id="collapse5" aria-labelledby="heading5" data-parent=".row">
+                        Proceedings of the Pakistan Academy of Sciences: A. Physical and Computational Sciences 53 (4):
+                        381–389 (2016). ISSN: 2518-4245 HEC recognized (X Category)
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 6 -->
         <div class="row">
             <!-- Left side with image -->
@@ -159,16 +229,18 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 6 -->
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse6"
+                        aria-expanded="false" aria-controls="collapse6">
                         6. New Workflow Model Approach for Test Cases Generation
                     </div>
-                    <div class="card-body">
-                        in the Bahria University journal of Information and Communication Technologies (BUJICT) Volume - 9, Issue - II (DEC 2016). ISSN : 1999-4974  HEC recognized (Y Category)
+                    <div class="card-body collapse" id="collapse6" aria-labelledby="heading6" data-parent=".row">
+                        in the Bahria University journal of Information and Communication Technologies (BUJICT) Volume -
+                        9, Issue - II (DEC 2016). ISSN : 1999-4974 HEC recognized (Y Category)
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 7 -->
         <div class="row">
             <!-- Left side with image -->
@@ -180,19 +252,22 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 7 -->
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse7"
+                        aria-expanded="false" aria-controls="collapse7">
                         7. SocioRank*: A community and role detection method in social networks
                     </div>
-                    <div class="card-body">
-                        Published in Computers & Electrical Engineering (Elsevier) Volume - 76, Issue – June  (2019). (pp. 122-132). ISSN: 0045-7906  IF: 2.662  
-                        
-                        <a class="text-white btn bg-primary" href="https://doi.org/10.1016/j.compeleceng.2019.03.010">Link</a>
-                        
+                    <div class="card-body collapse" id="collapse7" aria-labelledby="heading7" data-parent=".row">
+                        Published in Computers & Electrical Engineering (Elsevier) Volume - 76, Issue – June (2019).
+                        (pp. 122-132). ISSN: 0045-7906 IF: 2.662
+
+                        <a class="text-white btn bg-primary"
+                            href="https://doi.org/10.1016/j.compeleceng.2019.03.010">Link</a>
+
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 8 -->
         <div class="row">
             <!-- Left side with image -->
@@ -204,18 +279,22 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 8 -->
                 <div class="card">
-                    <div class="card-header">
-                        8. A proactive model on innovative biomedical applications of gold nanoparticles <a class="text-white btn bg-primary" href="https://link.springer.com/article/10.1007/s13204-019-01165-4">Link</a>
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse8"
+                        aria-controls="collapse8" aria-expanded="false">
+                        8. A proactive model on innovative biomedical applications of gold nanoparticles <a
+                            class="text-white btn bg-primary"
+                            href="https://link.springer.com/article/10.1007/s13204-019-01165-4">Link</a>
                     </div>
-                    <div class="card-body">
-                        Published in Applied Nanoscience Volume 09 Issue Sep, 2019. (P: 01-13) ISSN 2190-5509 IF  3.198,  DOI: 
-                        
+                    <div class="card-body collapse" id="collapse8" aria-labelledby="heading8" data-parent=".row">
+                        Published in Applied Nanoscience Volume 09 Issue Sep, 2019. (P: 01-13) ISSN 2190-5509 IF 3.198,
+                        DOI:
+
                         <a class="text-white btn bg-primary" href="https://doi.org/10.1007/s13204-019-01165-4">Link</a>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 9 -->
         <div class="row">
             <!-- Left side with image -->
@@ -227,19 +306,24 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 9 -->
                 <div class="card">
-                    <div class="card-header">
-                        9. Comprehensive facts on dynamic antimicrobial properties of polysaccharides and biomolecules-silver nanoparticle conjugate
-                        <a class="text-white btn bg-primary" href="https://www.sciencedirect.com/science/article/abs/pii/S0141813019372769?via%3Dihub">Link</a>
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse9"
+                        aria-expanded="false" aria-controls="collapse9">
+                        9. Comprehensive facts on dynamic antimicrobial properties of polysaccharides and
+                        biomolecules-silver nanoparticle conjugate
+                        <a class="text-white btn bg-primary"
+                            href="https://www.sciencedirect.com/science/article/abs/pii/S0141813019372769?via%3Dihub">Link</a>
                     </div>
-                    <div class="card-body">
-                        Published in International Journal of Biological Macromolecules, Dec, 2019. ISSN: 0141-8130  IF 5.162
-                        
-                        <a class="text-white btn bg-primary" href="https://doi.org/10.1016/j.ijbiomac.2019.12.089">Link</a>
+                    <div class="card-body collapse" id="collapse9" aria-labelledby="heading9" data-parent=".row">
+                        Published in International Journal of Biological Macromolecules, Dec, 2019. ISSN: 0141-8130 IF
+                        5.162
+
+                        <a class="text-white btn bg-primary"
+                            href="https://doi.org/10.1016/j.ijbiomac.2019.12.089">Link</a>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 10 -->
         <div class="row">
             <!-- Left side with image -->
@@ -251,19 +335,22 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 10 -->
                 <div class="card">
-                    <div class="card-header">
-                        10.	Silver nano-particles: synthesis andfcharacterization byfusing glucans extracted fromfPleurotus ostreatus
-                        <a class="text-white btn bg-primary" href="https://link.springer.com/article/10.1007/s13204-019-01103-4">Link</a>
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse10"
+                        aria-expanded="false" aria-controls="collapse10">
+                        10. Silver nano-particles: synthesis andfcharacterization byfusing glucans extracted
+                        fromfPleurotus ostreatus
+                        <a class="text-white btn bg-primary"
+                            href="https://link.springer.com/article/10.1007/s13204-019-01103-4">Link</a>
                     </div>
-                    <div class="card-body">
-                        Published in Applied Nanoscience, July, 2019 (Page: 1-10) ISSN 2190-5509 IF  3.198,  DOI: 
-                        
+                    <div class="card-body collapse" id="collapse10" aria-labelledby="heading10" data-parent=".row">
+                        Published in Applied Nanoscience, July, 2019 (Page: 1-10) ISSN 2190-5509 IF 3.198, DOI:
+
                         <a class="text-white btn bg-primary" href="https://doi.org/10.1007/s13204-019-01103-4">Link</a>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 11 -->
         <div class="row">
             <!-- Left side with image -->
@@ -275,20 +362,24 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 11 -->
                 <div class="card">
-                    <div class="card-header">
-                        11.	In vitro Identification of CACNA1H in the 9th Exon of Childhood Absence Epilepsy (CAE) Patients Using BioEdit and ClustalW2
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse11"
+                        aria-expanded="false" aria-controls="collapse11">
+                        11. In vitro Identification of CACNA1H in the 9th Exon of Childhood Absence Epilepsy (CAE)
+                        Patients Using BioEdit and ClustalW2
                     </div>
-                    <div class="card-body">
-                        published in BioScientific Review (BSR) 2021;3(2):54–65 ISSN(P): 2663-4198  DOI: 
-                        
-                        <a class="text-white btn bg-primary" href="https://doi.org/10.32350/BSR.0302.05">Link</a>   Published: 31 August 2021 
-                        
-                        <a class="text-white btn bg-primary" href="https://journals.umt.edu.pk/index.php/BSR/article/view/1557">Link</a>
+                    <div class="card-body collapse" id="collapse11" aria-labelledby="heading11" data-parent=".row">
+                        published in BioScientific Review (BSR) 2021;3(2):54–65 ISSN(P): 2663-4198 DOI:
+
+                        <a class="text-white btn bg-primary" href="https://doi.org/10.32350/BSR.0302.05">Link</a>
+                        Published: 31 August 2021
+
+                        <a class="text-white btn bg-primary"
+                            href="https://journals.umt.edu.pk/index.php/BSR/article/view/1557">Link</a>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 12 -->
         <div class="row">
             <!-- Left side with image -->
@@ -300,17 +391,19 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 12 -->
                 <div class="card">
-                    <div class="card-header">
-                        12.	An Intelligent Fire Warning Application Using IoT and an Adaptive Neuro-Fuzzy Inference System
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse12"
+                        aria-expanded="false" aria-controls="collapse12">
+                        12. An Intelligent Fire Warning Application Using IoT and an Adaptive Neuro-Fuzzy Inference
+                        System
                         <a class="text-white btn bg-primary" href="https://www.mdpi.com/1424-8220/19/14/3150">Link</a>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body collapse" id="collapse12" aria-labelledby="heading12" data-parent=".row">
                         Published in Sensors 2019, 19, 3150 Pages (1-18) ISSN 1424-8220 IF. 3.031
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Iteration 13 -->
         <div class="row">
             <!-- Left side with image -->
@@ -322,17 +415,20 @@
             <div class="col-md-10 mb-4">
                 <!-- Example for Item 13 -->
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse13"
+                        aria-expanded="false" aria-controls="collapse13">
                         13. An IoT-based Intelligent Wound Monitoring System
                     </div>
-                    <div class="card-body">
-                        Published in IEEE Access, Vol 7 issue 1, 10 Sep, 2019  ISSN: 2169-3536  IF: 4.098 https://doi.org/10.1109/ACCESS.2019.2940622s
+                    <div class="card-body collapse" id="collapse13" aria-labelledby="heading13" data-parent=".row">
+                        Published in IEEE Access, Vol 7 issue 1, 10 Sep, 2019 ISSN: 2169-3536 IF: 4.098
+                        <a class="text-white btn bg-primary"
+                            href="https://doi.org/10.1109/ACCESS.2019.2940622s">Link</a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Iteration 1 -->
+
+        <!-- Iteration 14 -->
         <div class="row">
             <!-- Left side with image -->
             <div class="col-md-2 mb-4">
@@ -341,19 +437,20 @@
 
             <!-- Right side with card -->
             <div class="col-md-10 mb-4">
-                <!-- Example for Item 1 -->
+                <!-- Example for Item 14 -->
                 <div class="card">
-                    <div class="card-header">
-                        Collapsible Item 1
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse14"
+                        aria-expanded="false" aria-controls="collapse14">
+                        14. An Intelligent Data Analysis for Recommendation Systems using Machine Learning
                     </div>
-                    <div class="card-body">
-                        Content for item 1 goes here.
+                    <div class="card-body collapse" id="collapse14" aria-labelledby="heading14" data-parent=".row">
+                        Published in Scientific Programming, Sep, 2019 (P: 01-30) ISSN: 1058-9244 IF: 1.289
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Iteration 1 -->
+
+        <!-- Iteration 15 -->
         <div class="row">
             <!-- Left side with image -->
             <div class="col-md-2 mb-4">
@@ -362,19 +459,23 @@
 
             <!-- Right side with card -->
             <div class="col-md-10 mb-4">
-                <!-- Example for Item 1 -->
+                <!-- Example for Item 15 -->
                 <div class="card">
-                    <div class="card-header">
-                        Collapsible Item 1
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse15"
+                        aria-expanded="false" aria-controls="collapse15">
+                        15. Modified Decision Tree Technique for Ransomware Detection at Runtime through API Calls <a
+                            class="text-white btn bg-primary"
+                            href="https://www.hindawi.com/journals/sp/2020/8845833/">Link</a>
                     </div>
-                    <div class="card-body">
-                        Content for item 1 goes here.
+                    <div class="card-body collapse" id="collapse15" aria-labelledby="heading15" data-parent=".row">
+                        Published in Scientific Programming, Aug, 2020 (P: 01-30) ISSN: 1058-9244 IF: 1.33
+                        <a class="text-white btn bg-primary" href="https://doi.org/10.1155/2020/8845833">Link</a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Iteration 1 -->
+
+        <!-- Iteration 16 -->
         <div class="row">
             <!-- Left side with image -->
             <div class="col-md-2 mb-4">
@@ -383,19 +484,23 @@
 
             <!-- Right side with card -->
             <div class="col-md-10 mb-4">
-                <!-- Example for Item 1 -->
+                <!-- Example for Item 16 -->
                 <div class="card">
-                    <div class="card-header">
-                        Collapsible Item 1
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse16"
+                        aria-expanded="false" aria-controls="collapse16">
+                        16. IoT health-Care: Design Smart and Cost-Effective Sleep Quality Monitoring System
+                        <a class="text-white btn bg-primary"
+                            href="https://www.hindawi.com/journals/js/2020/8882378/">Link</a>
                     </div>
-                    <div class="card-body">
-                        Content for item 1 goes here.
+                    <div class="card-body collapse" id="collapse16" aria-labelledby="heading16" data-parent=".row">
+                        accepted in the journal, Journal of Sensors. IF: 1.595 <a class="text-white btn bg-primary"
+                            href="https://doi.org/10.1155/2020/8882378">Link</a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Iteration 1 -->
+
+        <!-- Iteration 17 -->
         <div class="row">
             <!-- Left side with image -->
             <div class="col-md-2 mb-4">
@@ -404,19 +509,23 @@
 
             <!-- Right side with card -->
             <div class="col-md-10 mb-4">
-                <!-- Example for Item 1 -->
+                <!-- Example for Item 17 -->
                 <div class="card">
-                    <div class="card-header">
-                        Collapsible Item 1
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse17"
+                        aria-expanded="false" aria-controls="collapse17">
+                        17. Convolutional Neural Network Based Classification of App Reviews
+                        <a class="text-white btn bg-primary"
+                            href="https://ieeexplore.ieee.org/document/9217455/">Link</a>
                     </div>
-                    <div class="card-body">
-                        Content for item 1 goes here.
+                    <div class="card-body collapse" id="collapse17" aria-labelledby="heading17" data-parent=".row">
+                        Published in IEEE Access, Vol 7 issue 1, 10 Sep, 2019 ISSN: 2169-3536 IF: 3.75
+                        <a class="text-white btn bg-primary" href="https://doi.org/10.1109/ACCESS.2020.3029634">Link</a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Iteration 1 -->
+
+        <!-- Iteration 18 -->
         <div class="row">
             <!-- Left side with image -->
             <div class="col-md-2 mb-4">
@@ -425,19 +534,25 @@
 
             <!-- Right side with card -->
             <div class="col-md-10 mb-4">
-                <!-- Example for Item 1 -->
+                <!-- Example for Item 18 -->
                 <div class="card">
-                    <div class="card-header">
-                        Collapsible Item 1
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse18"
+                        aria-expanded="false" aria-controls="collapse18">
+                        18. COVID-19: A Colossal Threat to Fundamental Rights of Humans
+                        <a class="text-white btn bg-primary"
+                            href="http://art.eurekajournals.com/index.php/IJHSSIT/article/download/264/300">Link</a>
                     </div>
-                    <div class="card-body">
-                        Content for item 1 goes here.
+                    <div class="card-body collapse" id="collapse18" aria-labelledby="heading18" data-parent=".row">
+                        Published in International Journal of Humanities & Social Science: Insights & Transformations
+                        Vol. 5, Issue 2 – 2020 ISSN: 2581-3587 Page 1 to 7 Link:
+                        <a class="text-white btn bg-primary"
+                            href="http://art.eurekajournals.com/index.php/IJHSSIT/article/view/26">Link</a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Iteration 1 -->
+
+        <!-- Iteration 19 -->
         <div class="row">
             <!-- Left side with image -->
             <div class="col-md-2 mb-4">
@@ -446,19 +561,23 @@
 
             <!-- Right side with card -->
             <div class="col-md-10 mb-4">
-                <!-- Example for Item 1 -->
+                <!-- Example for Item 19 -->
                 <div class="card">
-                    <div class="card-header">
-                        Collapsible Item 1
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse19"
+                        aria-expanded="false" aria-controls="collapse19">
+                        19. Integration of 5G and Block-chain Technologies in Smart Telemedicine using IoT
+                        <a class="text-white btn bg-primary"
+                            href="https://www.hindawi.com/journals/jhe/2021/8814364/">Link</a>
                     </div>
-                    <div class="card-body">
-                        Content for item 1 goes here.
+                    <div class="card-body collapse" id="collapse19" aria-labelledby="heading19" data-parent=".row">
+                        in the journal of “Journal of Healthcare Engineering”. ISSN (Print) 2040-2295 , Impact factor:
+                        1.803, 03 March 2021
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Iteration 1 -->
+
+        <!-- Iteration 20 -->
         <div class="row">
             <!-- Left side with image -->
             <div class="col-md-2 mb-4">
@@ -467,19 +586,22 @@
 
             <!-- Right side with card -->
             <div class="col-md-10 mb-4">
-                <!-- Example for Item 1 -->
+                <!-- Example for Item 20 -->
                 <div class="card">
-                    <div class="card-header">
-                        Collapsible Item 1
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse20"
+                        aria-expanded="false" aria-controls="collapse20">
+                        20. Prediction of breast cancer using machine learning techniques
+                        <a class="text-white btn bg-primary"
+                            href="https://journals.umt.edu.pk/index.php/BSR/article/view/2102">Link</a>
                     </div>
-                    <div class="card-body">
-                        Content for item 1 goes here.
+                    <div class="card-body collapse" id="collapse20" aria-labelledby="heading20" data-parent=".row">
+                        in BioScientific Review, Vol 4 No 1 (2022) March 2022
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Iteration 1 -->
+
+        <!-- Iteration 21 -->
         <div class="row">
             <!-- Left side with image -->
             <div class="col-md-2 mb-4">
@@ -488,19 +610,25 @@
 
             <!-- Right side with card -->
             <div class="col-md-10 mb-4">
-                <!-- Example for Item 1 -->
+                <!-- Example for Item 21 -->
                 <div class="card">
-                    <div class="card-header">
-                        Collapsible Item 1
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse21"
+                        aria-expanded="false" aria-controls="collapse21">
+                        21. Statistical Analysis of Software Development Models by Six-Pointed Star Framework
+                        <a class="text-white btn bg-primary"
+                            href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0264420">Link</a>
                     </div>
-                    <div class="card-body">
-                        Content for item 1 goes here.
+                    <div class="card-body collapse" id="collapse21" aria-labelledby="heading21" data-parent=".row">
+                        published in PLOSONE journal, 1st April 2022. PLoS ONE 17(4): e0264420.
+                        <a class="text-white btn bg-primary"
+                            href="https://doi.org/10.1371/journal.pone.0264420">Link</a>
+                        Impact Factor: 3.24
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Iteration 1 -->
+
+        <!-- Iteration 22 -->
         <div class="row">
             <!-- Left side with image -->
             <div class="col-md-2 mb-4">
@@ -509,19 +637,24 @@
 
             <!-- Right side with card -->
             <div class="col-md-10 mb-4">
-                <!-- Example for Item 1 -->
+                <!-- Example for Item 22 -->
                 <div class="card">
-                    <div class="card-header">
-                        Collapsible Item 1
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse22"
+                        aria-expanded="false" aria-controls="collapse22">
+                        22. Development of a Tumor Diagnosis Application for Medical Practitioners using Transfer
+                        Learning”
+                        <a class="text-white btn bg-primary"
+                            href="https://journals.umt.edu.pk/index.php/BSR/article/view/2480">Link</a>
                     </div>
-                    <div class="card-body">
-                        Content for item 1 goes here.
+                    <div class="card-body collapse" id="collapse22" aria-labelledby="heading22" data-parent=".row">
+                        published in BioScientific Review (BSR) 2022;4(2): ISSN(P): 2663-4198 Vol 4 No 2 (2022) June
+                        2022.
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Iteration 1 -->
+
+        <!-- Iteration 23 -->
         <div class="row">
             <!-- Left side with image -->
             <div class="col-md-2 mb-4">
@@ -530,13 +663,228 @@
 
             <!-- Right side with card -->
             <div class="col-md-10 mb-4">
-                <!-- Example for Item 1 -->
+                <!-- Example for Item 23 -->
                 <div class="card">
-                    <div class="card-header">
-                        Collapsible Item 1
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse23"
+                        aria-expanded="false" aria-controls="collapse23">
+                        23. Deep Insight into IoT-Enabled Agriculture and Network Protocols
+                        <a class="text-white btn bg-primary"
+                            href="https://www.hindawi.com/journals/wcmc/2022/5617903/">Link</a>
                     </div>
-                    <div class="card-body">
-                        Content for item 1 goes here.
+                    <div class="card-body collapse" id="collapse23" aria-labelledby="heading23" data-parent=".row">
+                        published in Wireless Communications and Mobile Computing, vol. 2022, 16 pages, 2022.
+                        <a class="text-white btn bg-primary" href="https://doi.org/10.1155/2022/5617903">Link</a>
+                        Impact factor: 2.18
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Iteration 24 -->
+        <div class="row">
+            <!-- Left side with image -->
+            <div class="col-md-2 mb-4">
+                <img src="your_image_url.jpg" alt="Image" class="img-fluid" height="100">
+            </div>
+
+            <!-- Right side with card -->
+            <div class="col-md-10 mb-4">
+                <!-- Example for Item 24 -->
+                <div class="card">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse24"
+                        aria-expanded="false" aria-controls="collapse24">
+                        24. Improved Hybrid Deep Collaborative Filtering Approach for True Recommendations
+                        <a class="text-white btn bg-primary" href="https://www.techscience.com/cmc/v74n3/50895">Link</a>
+                    </div>
+                    <div class="card-body collapse" id="collapse24" aria-labelledby="heading24" data-parent=".row">
+                        published in CMC-computers materials & continua vol. 74, no.3, pp. 5301–5317, 2023
+                        <a class="text-white btn bg-primary" href="https://doi.org/10.32604/cmc.2023.032856">Link</a>
+                        Impact factor: 3.86
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Iteration 25 -->
+        <div class="row">
+            <!-- Left side with image -->
+            <div class="col-md-2 mb-4">
+                <img src="your_image_url.jpg" alt="Image" class="img-fluid" height="100">
+            </div>
+
+            <!-- Right side with card -->
+            <div class="col-md-10 mb-4">
+                <!-- Example for Item 25 -->
+                <div class="card">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse25"
+                        aria-expanded="false" aria-controls="collapse25">
+                        25. TOPIC MODELING USING DOCUMENT PIVOT APPROACH WITH FIXED WINDOW"
+                        <a class="text-white btn bg-primary"
+                            href="https://tianjindaxuexuebao.com/details.php?id=DOI:10.17605/OSF.IO/S6N58">Link</a>
+                    </div>
+                    <div class="card-body collapse" id="collapse25" aria-labelledby="heading25" data-parent=".row">
+                        published in Journal of Tianjin University Science and Technology Vol: 56 Issue: 02: 2023 dated
+                        10-02-2023 DOI10.17605/OSF.IO/S6N58 ISSN (Online):0493-2137
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Iteration 26 -->
+        <div class="row">
+            <!-- Left side with image -->
+            <div class="col-md-2 mb-4">
+                <img src="your_image_url.jpg" alt="Image" class="img-fluid" height="100">
+            </div>
+
+            <!-- Right side with card -->
+            <div class="col-md-10 mb-4">
+                <!-- Example for Item 26 -->
+                <div class="card">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse26"
+                        aria-expanded="false" aria-controls="collapse26">
+                        26. An Intelligent Hybrid Neural Collaborative Filtering Approach for True Recommendations
+                    </div>
+                    <div class="card-body collapse" id="collapse26" aria-labelledby="heading26" data-parent=".row">
+                        M. Ibrahim, I. S. Bajwa, N. Sarwar, F. Hajjej and H. A. Sakr,
+                        <a href="https://ieeexplore.ieee.org/document/10163823" target="_blank">
+                            "An Intelligent Hybrid Neural Collaborative Filtering Approach for True Recommendations,"
+                        </a>
+                        in IEEE Access, vol. 11, pp. 64831-64849, 2023, doi: 10.1109/ACCESS.2023.3289751. Impact factor:
+                        3.9
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Iteration 27 -->
+        <div class="row">
+            <!-- Left side with image -->
+            <div class="col-md-2 mb-4">
+                <img src="your_image_url.jpg" alt="Image" class="img-fluid" height="100">
+            </div>
+
+            <!-- Right side with card -->
+            <div class="col-md-10 mb-4">
+                <!-- Example for Item 27 -->
+                <div class="card">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse27"
+                        aria-expanded="false" aria-controls="collapse27">
+                        27. Isolation of Novel Mutations in BCL-2 gene from normal and diseased dog (Canis famiriaris)
+                        and cat (Feline catus)
+                        <a class="text-white btn bg-primary"
+                            href="https://journals.smarcons.com/index.php/mls/article/view/59">Link</a>
+                    </div>
+                    <div class="card-body collapse" id="collapse27" aria-labelledby="heading27" data-parent=".row">
+                        published in MEDICAL AND LIFE SCIENCES
+                        <a href="https://journals.smarcons.com/index.php/mls/issue/view/9" target="_blank">
+                            Vol. 1 No. 1 (2022): MLS
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Iteration 28 -->
+        <div class="row">
+            <!-- Left side with image -->
+            <div class="col-md-2 mb-4">
+                <img src="your_image_url.jpg" alt="Image" class="img-fluid" height="100">
+            </div>
+
+            <!-- Right side with card -->
+            <div class="col-md-10 mb-4">
+                <!-- Example for Item 28 -->
+                <div class="card">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse28"
+                        aria-expanded="false" aria-controls="collapse28">
+                        28. Recognizing Breast Cancer Using Edge Weighted Texture Features of Histopathology Images
+                        <a class="text-white btn bg-primary" href="https://www.techscience.com/cmc/v77n1/54486">Link</a>
+                    </div>
+                    <div class="card-body collapse" id="collapse28" aria-labelledby="heading28" data-parent=".row">
+                        Computers, Materials & Continua 2023, 77(1), 1081-1101.
+                        <a class="text-white btn bg-primary" href="https://doi.org/10.32604/cmc.2023.041558">Link</a>
+                        Impact factor: 3.1
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Iteration 29 -->
+        <div class="row">
+            <!-- Left side with image -->
+            <div class="col-md-2 mb-4">
+                <img src="your_image_url.jpg" alt="Image" class="img-fluid" height="100">
+            </div>
+
+            <!-- Right side with card -->
+            <div class="col-md-10 mb-4">
+                <!-- Example for Item 29 -->
+                <div class="card">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse29"
+                        aria-expanded="false" aria-controls="collapse29">
+                        29. Forged Video Detection Using Deep Learning: A SLR
+                        <a class="text-white btn bg-primary"
+                            href="https://www.hindawi.com/journals/acisc/2023/6661192/">Link</a>
+                    </div>
+                    <div class="card-body collapse" id="collapse29" aria-labelledby="heading29" data-parent=".row">
+                        Maryam Munawar, Iram Noreen, Raed S. Alharthi, Nadeem Sarwar, "Forged Video Detection Using Deep
+                        Learning: A SLR", Applied Computational Intelligence and Soft Computing, vol. 2023, Article ID
+                        6661192, 21 pages, 2023.
+                        <a class="text-white btn bg-primary" href="https://doi.org/10.1155/2023/6661192">Link</a>
+                        Impact factor: 2.9
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Iteration 30 -->
+        <div class="row">
+            <!-- Left side with image -->
+            <div class="col-md-2 mb-4">
+                <img src="your_image_url.jpg" alt="Image" class="img-fluid" height="100">
+            </div>
+
+            <!-- Right side with card -->
+            <div class="col-md-10 mb-4">
+                <!-- Example for Item 30 -->
+                <div class="card">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse30"
+                        aria-expanded="false" aria-controls="collapse30">
+                        30. IoT Network Anomaly Detection in Smart Homes Using Machine Learning
+                        <a class="text-white btn bg-primary"
+                            href="https://ieeexplore.ieee.org/document/10287977">Link</a>
+                    </div>
+                    <div class="card-body collapse" id="collapse30" aria-labelledby="heading30" data-parent=".row">
+                        N. Sarwar, I. S. Bajwa, M. Z. Hussain, M. Ibrahim and K. Saleem, "IoT Network Anomaly Detection
+                        in Smart Homes Using Machine Learning," in IEEE Access, vol. 11, pp. 119462-119480, 2023, doi:
+                        10.1109/ACCESS.2023.3325929. Impact factor: 3.9
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Iteration 31 -->
+        <div class="row">
+            <!-- Left side with image -->
+            <div class="col-md-2 mb-4">
+                <img src="your_image_url.jpg" alt="Image" class="img-fluid" height="100">
+            </div>
+
+            <!-- Right side with card -->
+            <div class="col-md-10 mb-4">
+                <!-- Example for Item 31 -->
+                <div class="card">
+                    <div class="card-header" type="button" data-toggle="collapse" data-target="#collapse31"
+                        aria-expanded="false" aria-controls="collapse31">
+                        31. Weber Law-based Approach for Multi-Class Image Forgery Detection
+                    </div>
+                    <div class="card-body collapse" id="collapse31" aria-labelledby="heading31" data-parent=".row">
+                        published in CMC-computers materials & continua, Dec, 2023 Impact factor: 3.1
                     </div>
                 </div>
             </div>
@@ -547,6 +895,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="yourscript.js"></script> -->
+
+    <footer class="footer">
+        <!-- Your footer content goes here -->
+        <p>&copy; 2024 by Dr. Nadeem Sarwar</p>
+    </footer>
 
 </body>
 
