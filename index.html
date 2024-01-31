@@ -283,9 +283,47 @@
     <footer class="footer">
         <!-- Your footer content goes here -->
         <p>&copy; 2024 by Dr. Nadeem Sarwar</p>
+        <div>
+            <p>This website has been visited <span style="color: red; font-weight: 700;" id="counter">0</span> times.</p>
+        </div>
     </footer>
 
     <script src="yourscript.js"></script>
+
+    <!-- Visitor counter -->
+    <script>
+        // Function to increment the visitor count
+        function incrementCount() {
+            // Check if the count is stored in localStorage
+            if (localStorage.getItem('visitorCount')) {
+                // If it exists, retrieve the count and increment it
+                let count = parseInt(localStorage.getItem('visitorCount'));
+                count++;
+                localStorage.setItem('visitorCount', count);
+            } else {
+                // If it doesn't exist, create it with an initial count of 1
+                localStorage.setItem('visitorCount', 1);
+            }
+
+            // Update the counter on the webpage
+            updateCounter();
+        }
+
+        // Function to update the counter on the webpage
+        function updateCounter() {
+            // Get the counter element
+            let counterElement = document.getElementById('counter');
+
+            // Get the count from localStorage
+            let count = localStorage.getItem('visitorCount');
+
+            // Update the counter element with the current count
+            counterElement.innerHTML = count;
+        }
+
+        // Increment the count on every page load, including refresh
+        window.addEventListener('load', incrementCount);
+    </script>
 </body>
 
 </html>
